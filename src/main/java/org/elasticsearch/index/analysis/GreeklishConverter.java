@@ -99,6 +99,7 @@ public class GreeklishConverter {
 			// generate them
 			greekWords = reverseStemmer.generateGreekVariants(tokenString);
 		} else {
+			greekWords.clear();
 			greekWords.add(tokenString);
 		}
 
