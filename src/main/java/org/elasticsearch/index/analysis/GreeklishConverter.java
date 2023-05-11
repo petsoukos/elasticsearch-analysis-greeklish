@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.logging.log4j.Logger;
-import org.elasticsearch.common.logging.Loggers;
 
 
 /**
@@ -18,13 +16,6 @@ import org.elasticsearch.common.logging.Loggers;
  *         digraphs. Because digraphs are special cases, they are treated separately.
  */
 public class GreeklishConverter {
-	/**
-	 * Elastic Search logger
-	 */
-    private static final Logger logger =
-			Loggers.getLogger(GreeklishConverter.class,
-												GreeklishConverter.class.getSimpleName());
-
 	/**
 	 * Tokens that contain only these characters will be affected by this
 	 * filter.
@@ -73,8 +64,6 @@ public class GreeklishConverter {
 
 		// Initialize setting for generating greek variants
 		this.generateGreekVariants = generateGreekVariants;
-
-		logger.debug("Max expansions: [{}] Generate Greek Variants [{}]", maxExpansions, generateGreekVariants);
 	}
 
 	/**

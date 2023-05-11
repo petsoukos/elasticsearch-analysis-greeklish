@@ -16,7 +16,7 @@ class SimpleSkroutzGreekStemmerAnalysisTest extends ESTestCase {
                 Settings.EMPTY, new GreeklishPlugin());
 
         TokenFilterFactory filterFactory = analysis.tokenFilter.get
-                ("skroutz_greeklish");
+                ("greeklish_filter");
         assertThat(filterFactory, instanceOf(GreeklishTokenFilterFactory.class));
     }
 }

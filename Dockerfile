@@ -1,4 +1,4 @@
-FROM adoptopenjdk/openjdk12:jdk-12.0.2_10-ubuntu
+FROM eclipse-temurin:17.0.7_7-jdk-jammy
 
 RUN apt-get update && \
   apt-get install -y zip unzip && \

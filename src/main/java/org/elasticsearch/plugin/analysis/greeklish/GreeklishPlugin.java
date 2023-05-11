@@ -17,7 +17,6 @@ public class GreeklishPlugin extends Plugin implements AnalysisPlugin {
     // since we only have one in our plugin.
     @Override
     public Map<String, AnalysisProvider<TokenFilterFactory>> getTokenFilters() {
-        return singletonMap("skroutz_greeklish",
-                GreeklishTokenFilterFactory::new);
+        return singletonMap("greeklish_filter", GreeklishTokenFilterFactory::new);
     }
 }
